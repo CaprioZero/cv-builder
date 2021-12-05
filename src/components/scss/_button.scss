@@ -1,0 +1,19 @@
+.profile-pic{
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border: none;
+}
+  
+.opaque{
+  opacity: 1 !important;
+}
+  
+.delete-button{
+  left: -35px;
+  top: 40px;
+  padding: 0 7px; 
+  svg {
+    margin-bottom: 0.1rem;
+  }
+}

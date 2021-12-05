@@ -1,0 +1,12 @@
+.previewDiv{
+  border: 1px solid grey;
+  width: 150px;
+  height: 150px;
+}
+  
+.choose-file{
+  width: 250px;
+  @media screen and (max-width: 350px){
+    width: 230px;
+  }
+}

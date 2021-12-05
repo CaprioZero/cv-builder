@@ -1,38 +1,142 @@
-.App {
+.app-container {
+  min-height: 100vh;
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.app-sidebar {
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-width: 100px;
+  max-width: 500px;
+  display: flex;
+  border-right: #e9e9e9 1px solid;
+  flex-direction: row;
+  background: #ffffff;
+  box-shadow: -8px 2px 22px -7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 0px 0px 10px;
+  z-index: 2;
+}
+
+.app-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100vh;
+  max-height: 100%;
+  background: #ffffff;
+  box-shadow: 8px 2px 32px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 10px 10px 0px;
+  z-index: 1;
+}
+
+.app-sidebar .app-sidebar-content {
+  flex: 1;
+}
+
+.app-sidebar .app-sidebar-resizer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 6px;
+  justify-self: flex-end;
+  cursor: col-resize;
+  resize: horizontal;
+}
+
+.app-sidebar .app-sidebar-resizer:hover {
+  width: 3px;
+  background: #c1c3c5b4;
+}
+
+.book {
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+  transform-origin: 0 0;
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.page {
+  display: block;
+  width: 210mm;
+  min-height: 287mm;
+  margin: 1cm auto;
+  border: 1px #D3D3D3 solid;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.subpage {
+  margin: 1cm;
+  width: 190mm;
+  min-height: 257mm;
+  outline: 0cm #FAFAFA solid;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
+
+.react-grid-layout {
+  position: relative;
+  transition: height 200ms ease;
+}
+
+.reactGridItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease;
+  transition-property: left, top;
+  background: rgba(0, 132, 255, 0.473);
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.deleteButton {
+  position: absolute;
+  top: 0%;
+  left: 92%;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dia-box{
+  margin-bottom: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dia-btn-box {
+  margin-left: 10px;
+  width: 200px;
+  display: inline-block;
 }
-
-.App-link {
-  color: #61dafb;
+.dia-ml10 {
+  margin-left: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dia-mr10 {
+  margin-right: 10px;
 }
