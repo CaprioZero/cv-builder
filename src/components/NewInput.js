@@ -6,7 +6,7 @@ const NewInput = React.forwardRef(({ style, className, ...props }, ref) => {
   const editorRef = useRef(null)
 
   return (
-    <div style={{ width: "100%", padding: "5px" }} className={className} ref={ref}>
+    <div style={{ width: "100%", padding: "30px" }} className={className} ref={ref}>
       <Editor
         onMouseDown={e => e.stopPropagation()}
         apiKey={process.env.REACT_APP_TINYMCE_API_KEY}

@@ -14,8 +14,8 @@ i18n
           "section2": "Create text field",
           "section2_placeholder": "Type something in...",
           "section3": "Create timeline",
-          "tips": "Tip: Drag avatar's width to full page to see preview correctly then drag it smaller again, click and hold the area a little bit below bottom of input field to drag it successfully",
-          "todo": "Todo: Create timeline template, clean up code"
+          "tips": "Use on PC only. User guide:",
+          "todo": "Todo: 41 74 62 61 73 68 (Xivzgv grnvormv gvnkozgv, xovzm fk xlwv, rnkovnvmg olxzo hgliztv gl hzev hgzgv ru szev grnv)"
         }
       },
       vi: {
@@ -25,8 +25,8 @@ i18n
           "section2": "Tạo trường nhập liệu",
           "section2_placeholder": "Gõ vào đây...",
           "section3": "Tạo dòng thời gian",
-          "tips": "Tip: Kéo ảnh đại diện tới hết chiều dài trang giấy để hiện đúng xem trước rồi kéo nhỏ lại, nhấn giữ trường nhập liệu tại nơi cách dưới đáy ô 1 chút để kéo thành công",
-          "todo": "Todo: Tạo mẫu dòng thời gian, tối ưu code"
+          "tips": "Sử dụng trên PC. Hướng dẫn người dùng:",
+          "todo": "Todo: 41 74 62 61 73 68 (Xivzgv grnvormv gvnkozgv, xovzm fk xlwv, rnkovnvmg olxzo hgliztv gl hzev hgzgv ru szev grnv)"
         }
       }
     },

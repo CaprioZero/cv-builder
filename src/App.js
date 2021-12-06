@@ -18,12 +18,14 @@ import Toolbar from '@mui/material/Toolbar';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './App.css'
 import _ from "lodash";
 import html2canvas from 'html2canvas'
 import jsPdf from 'jspdf'
 import ReactGridLayout from './components/ReactGridLayout'
 import { useTranslation } from "react-i18next"
+import guide from './assets/guide.gif'
 // import Resize from './utils/resize'
 
 // Resize();
@@ -77,8 +79,10 @@ const App = () => {
       i: "n" + items.length,
       x: items.length * 2,
       y: items.length + 1,
-      w: 2,
-      h: 1,
+      w: 4,
+      h: 2,
+      minW: 2,
+      minH: 2,
       btn: 1
     }])
   };
@@ -176,6 +180,12 @@ const App = () => {
           <Typography paragraph>
             {t("tips")}
           </Typography>
+          <br />
+          <LazyLoadImage
+            src={guide}
+            effect="blur"
+            height='142px'
+            width='294px' />
           <br />
           <Typography paragraph>
             {t("todo")}
