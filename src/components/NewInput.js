@@ -19,12 +19,12 @@ const NewInput = React.forwardRef(({ style, className, ...props }, ref) => {
           plugins: [
             'advlist autolink lists link image charmap preview anchor',
             'searchreplace visualblocks emoticons',
-            'insertdatetime media table paste code hr'
+            'insertdatetime media table paste hr'
           ],
           toolbar: 'undo redo | formatselect | ' +
-            'bold italic backcolor | alignleft aligncenter ' +
+            'bold italic backcolor | emoticons | hr | alignleft aligncenter ' +
             'alignright alignjustify | bullist numlist outdent indent | ' +
-            'removeformat | hr | emoticons',
+            'removeformat',
           content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:20px }'
         }}
       />

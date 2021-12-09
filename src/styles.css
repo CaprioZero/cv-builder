@@ -33,7 +33,7 @@
 .react-grid-item > .react-resizable-handle {
   position: absolute;
   width: 20px;
-  height: 90px;
+  height: 80px;
   bottom: 0;
   right: 0;
   cursor: se-resize;
@@ -53,14 +53,15 @@
 .dia-box{
   margin-bottom: 10px;
 }
+
 .dia-btn-box {
-  margin-left: 10px;
+  margin-left: 5px;
   width: 200px;
   display: inline-block;
+  margin-top: 10px;
 }
+
 .dia-ml10 {
   margin-left: 10px;
-}
-.dia-mr10 {
   margin-right: 10px;
 }

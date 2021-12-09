@@ -125,18 +125,3 @@
   font-size: 18px;
   cursor: pointer;
 }
-
-.dia-box{
-  margin-bottom: 10px;
-}
-.dia-btn-box {
-  margin-left: 10px;
-  width: 200px;
-  display: inline-block;
-}
-.dia-ml10 {
-  margin-left: 10px;
-}
-.dia-mr10 {
-  margin-right: 10px;
-}

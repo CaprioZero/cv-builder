@@ -6,7 +6,7 @@ import "react-resizable/css/styles.css";
 import '../styles.css'
 import Avatar from './Avatar'
 import NewInput from './NewInput'
-// import Timeline from './Timeline'
+import Timeline from './Timeline'
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 
 export default class ReactGridLayout extends React.PureComponent {
@@ -39,9 +39,9 @@ export default class ReactGridLayout extends React.PureComponent {
     } else if (el.btn === 2) {
       usedComponents = <NewInput />;
     } 
-    // else if (el.btn === 3) {
-    //   usedComponents = <Timeline />;
-    // }
+    else if (el.btn === 3) {
+      usedComponents = <Timeline />;
+    }
 
     return (
       <div key={i} data-grid={el}>

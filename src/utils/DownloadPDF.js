@@ -15,6 +15,12 @@ const printPDF = () => {
       for (i = 0; i < document.querySelectorAll('.delete-button').length; i++) {
         document.querySelectorAll('.delete-button')[i].style.visibility = "hidden";
       }
+      for (i = 0; i < document.querySelectorAll('.timeline-item-title').length; i++) {
+        document.querySelectorAll('.timeline-item-title')[i].classList.remove('active');
+      }
+      for (i = 0; i < document.querySelectorAll('.css-r8amgh-Circle').length; i++) {
+        document.querySelectorAll('.css-r8amgh-Circle')[i].classList.remove('active');
+      }
     }
   }).then(canvas => {
     const imgData = canvas.toDataURL("image/png");
