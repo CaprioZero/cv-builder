@@ -18,8 +18,8 @@ const printPDF = () => {
       for (i = 0; i < document.querySelectorAll('.timeline-item-title').length; i++) {
         document.querySelectorAll('.timeline-item-title')[i].classList.remove('active');
       }
-      for (i = 0; i < document.querySelectorAll('.css-r8amgh-Circle').length; i++) {
-        document.querySelectorAll('.css-r8amgh-Circle')[i].classList.remove('active');
+      for (i = 0; i < document.querySelectorAll('.timeline-vertical-circle').length; i++) {
+        document.querySelectorAll('.timeline-vertical-circle')[i].childNodes.classList.remove('active');
       }
     }
   }).then(canvas => {
